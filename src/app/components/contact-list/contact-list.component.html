@@ -1,0 +1,27 @@
+<div class="contacts-layout">
+  <ul class="contacts">
+    <li *ngFor="let contact of contacts" class="contacts__item">
+      <div class="contact__item-top">
+        <div class="contact__item-userpic">
+          <img src="{{contact.avatarUrl}}" alt="{{contact.name}}">
+        </div>
+        <div class="contact__item-main">
+          <div class="contact__item-title">{{contact.name}}</div>
+          <div class="contact__item-subtitle">{{contact.jobTitle}}</div>
+        </div>
+      </div>
+      <a class="contact__item-info" href="tel:{{contact.telephone}}">
+        <mat-icon aria-hidden="false" aria-label="Phone icon">call</mat-icon>
+        {{contact.telephone}}
+      </a>
+      <a class="contact__item-info" href="mailto:{{contact.email}}">
+        <mat-icon aria-hidden="false" aria-label="Mail icon">mail</mat-icon>
+        {{contact.email}}
+      </a>
+      <div class="contact__item-info">
+        <mat-icon aria-hidden="false" aria-label="Location icon">near_me</mat-icon>
+        {{contact.address}}
+      </div>
+    </li>
+  </ul>
+</div>

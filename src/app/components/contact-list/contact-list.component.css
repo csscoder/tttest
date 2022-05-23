@@ -1,0 +1,84 @@
+.contacts-layout {
+  padding: 20px;
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px 0 0 -10px;
+  list-style: none;
+  padding: 0;
+  color: #242424;
+}
+
+.contacts__item {
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  padding: 15px 15px 22px 15px;
+}
+
+.contact__item-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.contact__item-userpic {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #636364;
+  margin-right: 15px;
+  align-self: flex-start;
+}
+
+.contact__item-userpic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact__item-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: .2em;
+}
+
+.contact__item-subtitle {
+  font-size: 14px;
+  color: #808080;
+}
+
+.contact__item-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+a.contact__item-info {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a.contact__item-info:hover {
+  color: #000080;
+}
+
+.contact__item-info .material-icons {
+  margin-right: 8px;
+  align-self: flex-start;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
